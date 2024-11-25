@@ -1,79 +1,97 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <style>
-        body {
-            margin: 10px;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #ff0000;
-            font-family: Arial, sans-serif;
-        }
-        div {
-            width: 80%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 1%;
-        }
-        h1, h2, h3 {
-            color: #000000;
-            
-        }
-        .name {
-            margin-top : 0px;
-            font-size: 20px;
-            
-        }
-
-        header {
-            margin-bottom: 20px;
-        }
-        h2 {
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 5px;
-        }
-        p {
-            margin: 5px ;
-        }
-        .picture {
-    display: block;
-    margin: 0 auto; 
-    border-radius: 30%;
-    width: 500px; 
-    height: 500px; 
-        }
-        
-    </style>
+    <title>Chanathip Manachon - Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body> 
-    <div class="container">
-    <header class = "name">
-        <img src="Chanathip.jpg" alt="Chanathip.jpg" class="picture">
+<body>
 
-    <h1>ข้อมูลนักศึกษา</h1>
-    
-    <p><strong>ชื่อ-นามสกุล:</strong>ชนาธิป มานะชนม์</p>
-    <p><strong>ชื่อเล่น:</strong>กุน</p>
-    <p><strong>สาขาวิชา:</strong> DIT</p>
-    <p><strong>กลุ่มเรียน (Section):</strong> G2</p>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#about-me">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
 
-    <h2>เหตุผลที่อยากเรียน Full Stack Web Development</h2>
-    <p>อยากลองอะไรใหม่ๆ</p>
+    <!-- About Me Section -->
+    <section id="about-me">
+        <div class="profile-pic">
+    <img src="Shun.png" alt="Chanathip Manachon">
+</div>
 
-    <h2>ความคาดหวังต่อวิชานี้</h2>
-    <p>เขียนเว็ป</p>
+        
+        <h1>Chanathip Manachon</h1>
+        <p><em>Currently studying at Faculty of Computer Engineering</em></p>
+        <p>Department of Digital Technology and Information</p>
+        <p>Panyapiwat Institute of Management: <a href="http://pim.ac.th" target="_blank">PIM</a></p>
+        <p class="brief-history">I am a highly motivated and dedicated student who thrives on the opportunity to explore and absorb new knowledge. I am deeply committed to continuously developing my skill set, embracing challenges as opportunities for growth. My passion lies in the world of 3D design, where creativity and innovation come together to bring ideas to life.</p>
+        <hr>
+    </section>
 
-    <h2>จุดอ่อนที่ต้องพัฒนาเกี่ยวกับทักษะ Programming และแนวทางการพัฒนา</h2>
-    <p> ด้านการพัฒนา จึงจําเป็นต้องศึกษาวิธีการให้มากขึ้น</p>
-    
-    <p>แรงบันดาลใจ</p>
-        <a href="https://www.youtube.com/@HEARTROCK">เข้าชมได้ที่นี่</a>
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor's Degree in Computer Engineering</p>
+        <p>Department of Digital Technology and Information</p>
+        <hr>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <div class="skill">
+                <img src="Blender_logo.png" alt="Blender_logo">
+            </div>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Graphic Design</li>
+            <div class="skill">
+                <img src="coding.png" alt="coding">
+            </div>
+            <li>3D Modeling (Blender, Maya)</li>
+            <li>Problem Solving & Critical Thinking</li>
+        </ul>
+        <hr>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <ol>
+            <li>Email: 6652101165@pim.ac.th</li>
+            <li>Phone Number: 061-386-6389</li>
+            <li>Address: Nontaburi, Thailand</li>
+        </ol>
+    </section>
+</div>
+<div class="bottom-container">
+  <a href="https://www.facebook.com/chanatip.manachon/" target="_blank">
+      <img src="Facebook_Logo.png" alt="fFacebook_Logo_.png" class="image-link">
+    </a>
+    <a href="https://www.facebook.com/chanatip.manachon/" target="_blank">
+      <img src="Instagram_icon.png.webp" alt="Instagram" class="image-link">
+    </a>
+    <a href="https://github.com/ShunSeiSo" target="_blank">
+      <img src="github-logo.png" alt="LINE" class="image-link">
+    </a>
+  
+  <p>© ShunSeiSo.</p>
+</div>
+
+<p>Go to the <a href="#section-1">top</a>.</p>
 </body>
 </html>
-<p>รูปภาพที่สนใจ</p>
-<img src="Seiya.jpg" alt="Chanathip Manachon" class="picture">
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
